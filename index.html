@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Форма AJAX</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <div class="form__input-block">
+                <input type="text" name="fname" autocomplete="given-name" class="form__input _required">
+                <span class="from__label">Имя</span>
+            </div>
+            <div class="form__input-block">
+                <input type="text" name="lname" autocomplete="family-name" class="form__input _required">
+                <span class="from__label">Фамилия</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="text" name="mname" autocomplete="additional-name" class="form__input _required">
+                <span class="from__label">Отчество</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="text" name="mothername" class="form__input">
+                <span class="from__label">Матчество</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="tel" name="phone" autocomplete="tel" data-tel-input maxlength="18" class="form__input _required">
+                <span class="from__label">Телефон</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="email" name="email" autocomplete="email" class="form__input _required">
+                <span class="from__label">Почта</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="text" name="login" autocomplete="off" class="form__input _required">
+                <span class="from__label">Логин</span>                
+            </div>
+            <div class="form__input-block">
+                <input type="password" name="password" autocomplete="off" class="form__input _required">
+                <span class="from__label">Пароль</span>                
+            </div>
+            <button type="submit" class="form__button">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="./phoneinput.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+
+    background-color: #c1dfc1;
+}
+
+.container {
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 300px;
+    padding: 30px 20px 20px;
+
+    border: 2px solid #090;
+    border-radius: 24px;
+    background-color: transparent;
+
+}
+
+.form__input-block {
+    width: 100%;
+    position: relative;
+    margin-bottom: 23px;
+}
+
+.form__input {
+    width: 100%;
+    height: 35px;
+
+    font-size: 16px;
+    color: #006200;
+
+    padding: 0 20px 0 10px;
+
+    border: 1px solid #090;
+    border-radius: 8px;
+    background: transparent;
+    transition: background-color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+.form__input:-webkit-autofill,
+.form__input:autofill {
+    background-color: transparent!important;
+    background: transparent!important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #bddfbd !important; /* Цвет фона */
+    -webkit-text-fill-color: #006200 !important; /* цвет текста */
+    color:  #006200 !important; /* цвет текста */
+}
+
+.form__input:hover{
+    background-color: #ace2ac;
+}
+
+.form__input:focus{
+    outline: #090 solid 1px;
+    background-color: transparent;
+}
+
+.from__label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    font-size: 16px;
+    color: #006200;
+
+    pointer-events: none;
+    transform: translateX(10px) translateY(-50%) scale(1);
+
+    transition: transform .3s ease-in-out, font-size .3s ease-in-out, top .3s ease-in-out;
+}
+
+.form__input:focus ~ .from__label{
+    top: 0;
+    font-size: 13px;
+    transform: translateX(2px) translateY(-100%);
+}
+
+.form__input._no-empty ~ .from__label{
+    top: 0;
+    font-size: 13px;
+    transform: translateX(2px) translateY(-100%);
+}
+
+.form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 16px;
+    color: #006200;
+
+    margin-top: 10px;
+
+    border: 1px solid #090;
+    border-radius: 8px;
+    background: #c1dfc1;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.form__button:hover{
+    background: #ace2ac;
+}
+
+.form__button:focus{
+    outline: #090 solid 1px;
+    background: #ace2ac;
+}
+
